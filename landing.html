@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Landing</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="" class="logo">
+            <!-- <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> -->
+            <img src="images/user.png" class="user"  onclick="toggleMenu()">
+            
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/user.png">
+                        <h3>James cameron</h3>
+                    </div>
+                    <hr>
+
+                    <a href="usercard.html" class="sub-menu-link">
+                        <img src="images/profile.png">
+                        <p>Edit profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="index.html" class="sub-menu-link">
+                        <img src="images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <center>
+            <div class="data">
+                <h1>Welcome!! Logged in Successfully</h1>
+            </div>
+        </center>
+    </div>
+
+    <script>
+
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+
+</body>
+</html>
