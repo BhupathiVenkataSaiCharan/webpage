@@ -131,7 +131,7 @@
 }
 
 
-/* @media(max-width:1920px){
+@media(min-width:1920px){
     .box {
         height: 1000px;
         background-color: white;
@@ -199,4 +199,4 @@
         margin-left: 125px;
         border-radius: 250px;
     }
-} */
+}

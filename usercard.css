@@ -131,7 +131,7 @@ label{
     }
 }
 
-/* @media(max-width: 1920px){
+@media(min-width: 1920px){
     .box{
         margin-top: 200px;
         box-sizing: border-box;
@@ -230,4 +230,4 @@ label{
         margin-left: -245px;
         margin-bottom: 130px;
     }
-} */
+}

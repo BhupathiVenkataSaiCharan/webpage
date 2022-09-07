@@ -176,7 +176,7 @@ nav ul li a{
     }
 }
 
-/* @media(max-width:1920px) {
+@media(min-width:1920px) {
     .logo{
         width: 250px;
     }
@@ -221,4 +221,4 @@ nav ul li a{
         padding: 20px;
         margin-right: 20px;
     }
-} */
+}
