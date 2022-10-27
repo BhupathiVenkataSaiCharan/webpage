@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0170c1;
+  }
+  .home-form {
+    width: 532px;
+    height: 591px;
+    position: relative;
+    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    background-color: #fecc1f;
+  }
+  .home-image {
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    object-fit: cover;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 50%;
+  }
+  .home-textinput {
+    top: 250px;
+    width: 323px;
+    position: absolute;
+  }
+  .home-textinput1 {
+    top: 316px;
+    right: 12px;
+    width: 323px;
+    position: absolute;
+  }
+  .home-checkbox {
+    top: 354px;
+    left: 107px;
+    position: absolute;
+  }
+  .home-text {
+    top: 353px;
+    left: 126px;
+    color: var(--dl-color-gray-black);
+    position: absolute;
+    font-size: 12px;
+  }
+  .home-button {
+    top: 404px;
+    left: 105px;
+    color: #fecc1f;
+    width: 323px;
+    position: absolute;
+    text-align: center;
+    background-color: #0170c1;
+  }
+  .home-link {
+    top: 350px;
+    left: 323px;
+    color: var(--dl-color-primary-300);
+    position: absolute;
+    font-size: 12px;
+  }
+  @media(max-width: 1600px) {
+    .home-textinput1 {
+      top: 345px;
+      right: -56px;
+    }
+    .home-checkbox {
+      top: 383px;
+      left: 109px;
+    }
+    .home-text {
+      top: 381px;
+      left: 125px;
+    }
+    .home-button {
+      top: 424px;
+      left: 105px;
+    }
+    .home-link {
+      top: 380px;
+      left: 322px;
+    }
+    .home-text5 {
+      top: 200px;
+      left: 105px;
+      position: absolute;
+    }
+    .home-text6 {
+      top: 295px;
+      left: 105px;
+      position: absolute;
+    }
+  }
+  @media(max-width: 1200px) {
+    .home-textinput1 {
+      top: 345px;
+      right: -57px;
+    }
+    .home-checkbox {
+      top: 392px;
+      left: 106px;
+    }
+    .home-text {
+      top: 391px;
+      left: 122px;
+    }
+    .home-button {
+      top: 446px;
+      left: 106px;
+    }
+    .home-link {
+      top: 389px;
+      left: 323px;
+    }
+    .home-text5 {
+      top: 202px;
+      left: 105px;
+      position: absolute;
+    }
+    .home-text6 {
+      top: 297px;
+      left: 106px;
+      position: absolute;
+    }
+  }
+  

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="dashboard.js"></script>
+
+    <script>
+        let userTexts = document.getElementsByClassName("side-menu-text");
+let userPics = document.getElementsByClassName("side-menu-list");
+
+function showReview(){
+    for(userPic of userPics){
+        userPic.classList.remove("active-list");
+    }
+    for(userText of userTexts){
+        userText.classList.remove("active-text");
+    }
+
+    let i = Array.from(userPics).indexOf(event.target);
+
+    userPics[i].classList.add("active-list");
+    userTexts[i].classList.add("active-text");
+}
+    </script>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- <div class="topnav"> -->
+            <nav>
+                <!-- <img src="images/logo.png" alt="" class="logo"> -->
+
+                <img src="images/user.png" class="user"  onclick="toggleMenu()">
+                
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/user.png">
+                            <h3>James cameron</h3>
+                        </div>
+                        <hr>
+    
+                        <a href="usercard.html" class="sub-menu-link">
+                            <img src="images/profile.png">
+                            <p>Edit profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="Auth.html" class="sub-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+    
+                    </div>
+                </div>
+            </nav>
+        <!-- </div> -->
+        
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- <div class="links testimonial-pic">
+                <div  class="user-pic" onclick="showReview()">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </div>
+                <div class="user-pic" onclick="showReview()">
+                    <a href="#">
+                        <i class="fa fa-tachometer"></i>
+                        List of Companies
+                    </a>
+                </div>
+                <div class="user-pic" onclick="showReview()">
+                    <a href="#">
+                        <i class="fa fa-line-chart"></i>
+                        Line of Business
+                    </a>
+                </div>
+                <div class="user-pic" onclick="showReview()">
+                    <a href="#">
+                        <i class="fa fa-bell"></i>
+                        Application Features
+                    </a>
+                </div>
+                <div class="user-pic active-pic" onclick="showReview()">
+                    <a href="#">
+                        <i class="fa fa-cog"></i>
+                        Upload Settings
+                    </a>
+                </div>
+            </div> -->
+            <div class="links list">
+                <ul class="side-menu">
+                    <li class="side-menu-list" onclick="showReview()">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </li>
+                    <li class="side-menu-list" onclick="showReview()">
+                        <i class="fa fa-tachometer"></i>
+                        List of Companies
+                    </li>
+                    <li class="side-menu-list" onclick="showReview()">
+                        <i class="fa fa-line-chart"></i>
+                        Line of Business
+                    </li>
+                    <li class="side-menu-list" onclick="showReview()">
+                        <i class="fa fa-bell"></i>
+                        Application Features
+                    </li>
+                    <li class="side-menu-list active-list" onclick="showReview()">
+                        <i class="fa fa-cog"></i>
+                        Upload Settings
+                    </li>
+                </ul>
+                <!-- <p class="user-pic" onclick="showReview()">
+                    <i class="fa fa-home"></i>
+                    Home
+                </p>
+                <p class="user-pic" onclick="showReview()">
+                    <i class="fa fa-tachometer"></i>
+                    Dashboard
+                </p>
+                <p class="user-pic" onclick="showReview()">
+                    <i class="fa fa-line-chart"></i>
+                    Line of Business
+                </p>
+                <p class="user-pic" onclick="showReview()">
+                    <i class="fa fa-bell"></i>
+                    Application Features
+                </p>
+                <p class="user-pic active-pic" onclick="showReview()">
+                    <i class="fa fa-cog"></i>
+                    Upload Settings
+                </p> -->
+            </div>
+
+        </div>
+
+        <div class="text">
+            <div class="side-menu-text">
+                <p>This is</p>
+                <span>Home</span>
+            </div>
+            <div class="side-menu-text">
+                <p>This is</p>
+                <span>List of Companies</span>
+            </div>
+            <div class="side-menu-text">
+                <p>This is</p>
+                <span>Line of Business</span>
+            </div>
+            <div class="side-menu-text">
+                <p>This is</p>
+                <span>Application Features</span>
+            </div>
+            <div class="side-menu-text active-text">
+                <p>This is </p>
+                <span>Upload Settings</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+        }
+   </script>
+
+</body>
+</html>

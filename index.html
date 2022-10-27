@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Login</title>
 
-    <script>
+    <!-- <script>
         // function validate(event){
         //     event.preventDefault();
         //     var username = document.getElementById("username").value;
@@ -31,7 +31,8 @@
             }
         })
         })
-    </script>
+    </script> -->
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -42,15 +43,15 @@
                 <label>Username</label>
                 <div>
                     <i class="fa fa-user"></i>
-                    <input type="text" name="username" id="username" placeholder="Enter Username" autocomplete="off">
+                    <input type="text" id="username" placeholder="Enter Username" autocomplete="off">
                 </div>
                 <label>Password</label>
                 <div>
                     <i class="fa fa-lock"></i>
-                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                    <input type="password" id="password" placeholder="Enter Password">
                 </div>
                 <a href="#" class="forgot">Forgot Password?</a>
-                <input type="submit" value="Login" onclick="validate()">
+                <input type="submit" value="Login">
             </form>
         </div>
     </div>

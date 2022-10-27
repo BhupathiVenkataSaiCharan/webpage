@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+
+    <link rel="stylesheet" href="auth.css">
+
+    <script src="auth.js"></script>
+    <script src="hide.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Bizwy</h1>
+            <form class="form">
+                <div class="txt_field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="input_field" id="username" placeholder="&nbsp;" autocomplete="off">
+                    <label>PhoneNumber/Email</label>
+                </div>
+                <div class="txt_field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="input_field" id="password" placeholder="&nbsp;">
+                    <span class="eye"onclick="myPassword()">
+                        <i id="eye1" class="fa fa-eye"></i>
+                        <i id="eye2" class="fa fa-eye-slash"></i>
+                    </span>
+                    <label>Password</label>
+                </div>
+                <input type="checkbox" id="horns" name="horns" class="checkbox">
+                <div class="remember"><p>Remember me</p></div>
+                <div class="forgot">
+                    <a href="#">
+                        <p>Forgot Password?</p>
+                    </a>
+                </div>
+                <br/>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
