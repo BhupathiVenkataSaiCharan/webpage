@@ -1,0 +1,11 @@
+1-login page in Auth.html
+    -it has floating placeholder
+    -show and hide password field
+    -login to dashboard.html page after authentication of input fields
+    -dashboard page has side menu with open and close feature
+    -topnav has dropdown with logout option
+    -data displayed as per the sidemenu navigation to change wuithout reloading 
+
+
+2.Carousel.html
+    -owl carousel using html css
