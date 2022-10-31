@@ -12,6 +12,13 @@
     justify-content: center; */
 }
 
+.main-logo{
+    width: 140px;
+    height: 50px;
+    align-items: center;
+    padding: 40px 0 20px 180px;
+}
+
 .box{
     position: absolute;
     top:50%;
@@ -172,6 +179,12 @@ form .txt_field{
         margin-left: -100px;
         margin-top: -4px;
     }
+    .main-logo{
+        width: 140px;
+        height: 50px;
+        align-items: center;
+        padding: 40px 0 20px 130px;
+    }
 }
 
 
@@ -196,6 +209,13 @@ form .txt_field{
         font-size: 50px;
         text-align: center;
         padding: 40px 0 20px 0;
+    }
+
+    .main-logo{
+        width: 140px;
+        height: 50px;
+        align-items: center;
+        padding: 40px 0 20px 330px;
     }
 
     form .txt_field{
