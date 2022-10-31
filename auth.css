@@ -124,3 +124,166 @@ form .txt_field{
 #eye1{
     display: none;
 }
+
+
+
+/*responsive for mobile screen*/
+
+@media(max-width:480px){
+    .box{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 10%);
+        height: auto;
+    }
+
+    .checkbox{
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: -7px;
+    }
+
+    .remember p{
+        font-size: 12px;
+        position: relative;
+        /* margin-top: -20px; */
+        top: -3px;
+        margin-left: 15px;
+    }
+    .forgot p{
+        font-size: 12px;
+        position: relative;
+        margin-top: -17px;
+        /* margin-left: 40px; */
+        float: right;
+    }
+
+    .close-eye{
+        margin-left: -100px;
+        margin-top: -4px;
+    }
+    .open-eye{
+        margin-left: -100px;
+        margin-top: -4px;
+    }
+}
+
+
+/*responsive design for large desktops*/
+
+
+
+@media(min-width:1920px){
+    .box{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 800px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 10%);
+        height: 700px;
+    }
+
+    .box h1{
+        font-size: 50px;
+        text-align: center;
+        padding: 40px 0 20px 0;
+    }
+
+    form .txt_field{
+        position: relative;
+        border-bottom: 2px solid black;
+        margin: 50px 110px;
+    }
+
+    .txt_field i{
+        position: relative;
+        top: 50px;
+        left: -50px;
+        height: 30px;
+        font-size: 45px;
+    }
+
+    .txt_field .input_field{
+        width: 100%;
+        padding: 5px 0px;
+        height: 40px;
+        font-size: 25px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    
+    .txt_field label{
+        position: absolute;
+        top: 75px;
+        left: 5px;
+        color: #adadad;
+        transform: translateY(-50%);
+        font-size: 25px;
+        pointer-events: none;
+        transition:  .3s;
+    }
+
+    .close-eye{
+        margin-left: -290px;
+        margin-top: 20px;
+    }
+    .open-eye{
+        margin-left: -290px;
+        margin-top: 20px;
+    }
+
+    .checkbox{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -7px;
+        left: 110px;
+    }
+
+    .remember p{
+        font-size: 20px;
+        position: relative;
+        margin-top: -32px;
+        margin-left: 135px;
+    }
+
+    .forgot p{
+        font-size: 20px;
+        position: relative;
+        margin-top: -24px;
+        /* margin-left: 40px; */
+        /* float: right; */
+        margin-right: 110px;
+    }
+
+    .box form input[type="submit"] {
+        font-size: 20px;
+        font-weight: 550;
+        text-transform: uppercase;
+        background-color: #FECC1F;
+        color: black;
+        border: none;
+        width: 65%;
+        height: 55px;
+        padding: 15px;
+        margin-top: 45px;
+        border-radius: 250px;
+        margin-bottom: 50px;
+        margin-left: 100px;
+    }
+    
+    .box form input[type="submit"]:hover {
+        background-color: #FECC1F;
+        cursor: pointer;
+    }
+}

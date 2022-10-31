@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
         this.action = "Dashboard.html";
         } else {
         e.preventDefault();
-        alert("Invalid credentials \n username and password must have atleast 5 characters");
+        alert("Invalid credentials \n Mobile number must be 10 digits \n password must have atleast 5 characters");
         }
     })
 })
